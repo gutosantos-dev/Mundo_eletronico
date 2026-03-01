@@ -1,0 +1,327 @@
+h1{color: darkblue;
+font-size: 50px;
+font-family: 'Montserrat', sans-serif;}
+
+
+h2{color: darkblue;
+font-size: 20px;
+font-family: 'Montserrat', sans-serif;}
+
+.banner {
+  width: 100%;
+}
+
+
+
+.sobre{color: white;
+font-size: 15px;
+font-family: 'Montserrat', sans-serif;}
+
+.imagem{width: 50px; height: 50px;}
+
+#title_sobre{color: rgb(174, 199, 245);
+    font-family: 'Montserrat', sans-serif;}
+
+
+.zap{width: 50px}
+
+body{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+summary{
+color: rgb(92, 145, 243);    
+font-size: 30px
+;font-family: 'Montserrat', sans-serif;
+}
+
+p{color: beige;
+font-size: 25px;
+font-family: 'Montserrat', sans-serif;
+}
+
+
+.home{
+    color: white;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contatos{
+background-color:darkblue;
+display: flex;
+gap: 5px;
+ align-items: center;
+ box-sizing: border-box;
+ padding: 0;
+ justify-content: space-between;}
+
+.contatos a:hover{
+    color: red;
+}
+.pg_sobre{
+    background-color: black;}
+
+.pg_sobre p{
+    font-size: 17px;
+}
+
+
+.loc{
+    padding-left: 180px;
+}   
+
+.loc p{
+font-size: 15px;
+
+
+}
+
+.contatos p{
+font-size: 15px;}
+
+.cabeçalho{
+   margin-top: 110px;
+    position: relative;
+    top: -250px;
+    padding-bottom: 0px;
+    margin-bottom: -400px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.eletronicos{
+    height: 500px;
+}
+
+.div_sobre{
+    margin-left: 480px;
+padding-top: 20px;
+padding-bottom: 0px;
+display: flex;
+gap: 20px
+;
+}
+
+.div_home{
+        margin-left: 950px;
+padding-top: 20px;
+padding-bottom: 0px;
+}
+
+.planeta{
+     margin-left: 1400px;
+    position: relative;
+    top: -320px;
+    padding-bottom: 0px;
+    margin-bottom: -400px;
+    height: 320px;
+}
+
+.pg_produtos{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+
+
+.div_titulo{
+    background-color: darkblue;
+    padding: 6px;
+display: flex;
+gap: 500px;}
+
+#h1_produtos{
+    color: rgb(92, 145, 243);
+}
+
+.planeta2{
+    
+    height: 250px;
+}
+
+.h2_prod{
+    font-size: 40px;
+    color:rgb(92, 145, 243) ;
+}
+
+
+.l1-prod {
+  display: flex;
+  justify-content: flex-start;
+  gap: 70px;
+  padding: 0;}
+
+.item {
+ background-color: darkblue;
+   color: white;
+  font-size: 15px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.produtos{
+    height: 300px;
+    width: 300px;
+}
+
+
+.f-prod{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* ==== ADAPTAÇÃO PARA CELULARES ==== */
+@media (max-width: 768px) {
+    
+  h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Banner */
+  .banner {
+    width: 100%;
+  }
+
+  /* Contatos */
+  .contatos {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .loc{
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    gap: 10px;
+    text-align: center;
+    align-items: center;}
+
+  .contatos p, .home {
+    font-size: 18px;
+  }
+
+  /* Sobre */
+  .pg_sobre p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  #title_sobre {
+    text-align: center;
+    display: block;
+    font-size: 22px;
+  }
+
+  .div_sobre {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Cabeçalho / planeta / título */
+  .cabeçalho{
+    height: 340px;
+  }
+
+
+  .planeta,
+  .planeta2 {
+    margin-left: 0;
+    margin-top: 0;
+    position: static;
+  }
+
+  .planeta, .planeta2 {
+    display: block;
+    margin: 15px auto;
+    height: 180px;
+  }
+
+  /* Produtos */
+  .div_titulo {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #h1_produtos {
+    font-size: 28px;
+  }
+
+  .h2_prod {
+    font-size: 25px;
+  }
+
+  .l1-prod {
+    flex-direction: column;     /* imagens uma embaixo da outra */
+    align-items: center;
+    gap: 30px;
+  }
+
+  .produtos {
+    width: 90%;
+    height: auto;
+  }
+
+  .item {
+    font-size: 18px;
+    text-align: center;
+    width: 90%;
+  }
+
+  /* Imagens dos produtos */
+  .f-prod {
+    align-items: center;
+  }
+
+  .zap, .imagem {
+    width: 40px;
+    height: 40px;
+  }
+
+
+    .cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* espaço entre imagem e texto */
+  margin-bottom: 0px; /* empurra o h2 pra baixo */
+}
+
+.eletronicos{
+    height: 120px;
+    position: relative;
+    left: -92px;
+}
+.titulo{
+    font-size: 25px;}
+
+    
+.h2_index{padding-top: 20px;}
+
+
+
+
+}
+
